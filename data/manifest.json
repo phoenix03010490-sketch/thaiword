@@ -1,0 +1,117 @@
+{
+  "dataset": "VOLUBILIS Mundo v26.3",
+  "file_version": "v. 26.3 (Nov. 2026)",
+  "records": 115456,
+  "headwords": 103992,
+  "chinese_headwords": 10770,
+  "frequency_status": "none (dictionary tiers and starter words used; not corpus-frequency rank)",
+  "parts": [
+    {
+      "file": "data/vocab-01.json",
+      "count": 5000,
+      "bytes": 2081523
+    },
+    {
+      "file": "data/vocab-02.json",
+      "count": 5000,
+      "bytes": 1804059
+    },
+    {
+      "file": "data/vocab-03.json",
+      "count": 5000,
+      "bytes": 1706852
+    },
+    {
+      "file": "data/vocab-04.json",
+      "count": 5000,
+      "bytes": 1730749
+    },
+    {
+      "file": "data/vocab-05.json",
+      "count": 5000,
+      "bytes": 1843024
+    },
+    {
+      "file": "data/vocab-06.json",
+      "count": 5000,
+      "bytes": 1744449
+    },
+    {
+      "file": "data/vocab-07.json",
+      "count": 5000,
+      "bytes": 1745038
+    },
+    {
+      "file": "data/vocab-08.json",
+      "count": 5000,
+      "bytes": 1708035
+    },
+    {
+      "file": "data/vocab-09.json",
+      "count": 5000,
+      "bytes": 1707614
+    },
+    {
+      "file": "data/vocab-10.json",
+      "count": 5000,
+      "bytes": 1714398
+    },
+    {
+      "file": "data/vocab-11.json",
+      "count": 5000,
+      "bytes": 1745682
+    },
+    {
+      "file": "data/vocab-12.json",
+      "count": 5000,
+      "bytes": 1720613
+    },
+    {
+      "file": "data/vocab-13.json",
+      "count": 5000,
+      "bytes": 1707339
+    },
+    {
+      "file": "data/vocab-14.json",
+      "count": 5000,
+      "bytes": 1751186
+    },
+    {
+      "file": "data/vocab-15.json",
+      "count": 5000,
+      "bytes": 1708978
+    },
+    {
+      "file": "data/vocab-16.json",
+      "count": 5000,
+      "bytes": 1732880
+    },
+    {
+      "file": "data/vocab-17.json",
+      "count": 5000,
+      "bytes": 1727986
+    },
+    {
+      "file": "data/vocab-18.json",
+      "count": 5000,
+      "bytes": 1709343
+    },
+    {
+      "file": "data/vocab-19.json",
+      "count": 5000,
+      "bytes": 1690519
+    },
+    {
+      "file": "data/vocab-20.json",
+      "count": 5000,
+      "bytes": 1738040
+    },
+    {
+      "file": "data/vocab-21.json",
+      "count": 3992,
+      "bytes": 1468536
+    }
+  ],
+  "source": "https://belisan-volubilis.blogspot.com/",
+  "license": "CC BY-SA 4.0"
+}

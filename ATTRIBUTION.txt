@@ -1,0 +1,10 @@
+词库版权与来源：
+VOLUBILIS Multilingual Thai Dictionary & Database v26.3 (Nov 2026) by Belisan
+https://belisan-volubilis.blogspot.com/
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/
+Transformations performed: collated identical headwords into cards, preserved source sense entries, included a limited set of manually selected beginner Chinese glosses, assigned a preliminary learning priority based on dictionary levels and starter words, and exported JSON chunks.
+
+Other reference sources offered for OPTIONAL import, not redistributed in this ZIP:
+ThaiReader learner word list v42 (2026-11-05), CC BY-SA 4.0, https://thaireader.app/words/downloads
+Phupha Thai Word Frequency Dataset (2026), CC0, https://doi.org/10.5281/zenodo.18490474
