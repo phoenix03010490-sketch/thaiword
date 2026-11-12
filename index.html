@@ -25,18 +25,32 @@
   <div class="study-card-top"><span class="word-tag" id="wordTag">新词 · 基础</span><button class="icon-button subtle" id="starBtn" title="标记重点复习">☆</button></div>
   <div id="cardPrompt" class="prompt-area">
    <div class="prompt-hint" id="promptHint">看看你能否想起它的意思</div>
-   <div id="cardThaiGroup"><div class="font-label">传统有圈圈</div><div class="thai-looped" id="cardThai" lang="th">ขอบคุณ</div><div class="font-label secondary-label">现代无圈圈 · 识字训练</div><div class="thai-loopless" id="cardThaiModern" lang="th">ขอบคุณ</div></div>
+   <div id="cardThaiGroup"><div class="thai-looped" id="cardThai" lang="th" aria-label="泰文字体一">ขอบคุณ</div><div class="thai-loopless" id="cardThaiModern" lang="th" aria-label="泰文字体二">ขอบคุณ</div></div>
    <div id="cardChinesePrompt" class="chinese-prompt hidden"></div>
    <div id="cardListeningPrompt" class="listening-prompt hidden"><div>♫</div><p>先听读音，试着回忆泰文</p></div>
    <button class="audio-button" id="audioBtn" title="播放泰语发音">◖)) <span>播放泰语</span></button>
   </div>
   <div id="cardAnswer" class="answer hidden">
-   <div class="answer-divider"><span>ANSWER · 释义</span></div>
-   <div id="answerThai" class="answer-thai hidden"></div>
-   <div class="meaning" id="cardZh">谢谢；感谢</div><div class="english" id="cardEn"></div>
-   <div class="pron-info"><div class="pron-head"><span>发音与音节</span><span id="toneSource" class="source-tag"></span></div><div id="cardPron" class="romanized"></div><div id="cardSyllables" class="syllables"></div><div id="cardTones" class="tone-list"></div></div>
-   <div class="example-section" id="exampleArea"><div class="example-title">例句 · IN CONTEXT</div><p class="example-thai" id="cardExample" lang="th"></p><p class="example-zh" id="cardExampleZh"></p><p class="example-source" id="exampleSource"></p></div>
-   <details class="raw-senses"><summary>展开原词典全部义项</summary><div id="allSenses"></div></details>
+   <div class="answer-tabs" role="tablist" aria-label="词汇详情切换">
+    <button type="button" role="tab" aria-selected="true" class="answer-tab active" data-answer-tab="meaning">释义</button>
+    <button type="button" role="tab" aria-selected="false" class="answer-tab" data-answer-tab="pron">发音</button>
+    <button type="button" role="tab" aria-selected="false" class="answer-tab" data-answer-tab="example">例句</button>
+   </div>
+   <div class="answer-panel" role="tabpanel" data-tab-panel="meaning">
+    <div id="answerThai" class="answer-thai hidden" lang="th"></div>
+    <div id="answerThaiModern" class="answer-thai-modern hidden" lang="th"></div>
+    <div class="meaning" id="cardZh">谢谢；感谢</div>
+    <div class="english" id="cardEn"></div>
+    <div class="quick-pron" id="quickPron"></div>
+    <div class="quick-example hidden" id="quickExample"><span class="quick-example-th" id="quickExampleThai" lang="th"></span><span class="quick-example-zh" id="quickExampleZh"></span></div>
+   </div>
+   <div class="answer-panel hidden" role="tabpanel" data-tab-panel="pron">
+    <div class="pron-info"><div class="pron-head"><span>发音与音节</span><span id="toneSource" class="source-tag"></span></div><div id="cardPron" class="romanized"></div><div id="cardSyllables" class="syllables"></div><div id="cardTones" class="tone-list"></div></div>
+   </div>
+   <div class="answer-panel hidden" role="tabpanel" data-tab-panel="example">
+    <div class="example-section" id="exampleArea"><div class="example-title">例句 · IN CONTEXT</div><p class="example-thai" id="cardExample" lang="th"></p><p class="example-zh" id="cardExampleZh"></p><p class="example-source" id="exampleSource"></p></div>
+    <details class="raw-senses"><summary>原词典全部义项</summary><div id="allSenses"></div></details>
+   </div>
   </div>
   <button class="reveal-button" id="revealBtn">想好了，查看答案 ↓</button>
  </article>
