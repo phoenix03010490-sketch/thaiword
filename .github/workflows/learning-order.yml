@@ -1,0 +1,22 @@
+name: Build ThaiWord frequency & example overlay
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/learning-order.yml'
+      - 'scripts/build_learning_order.py'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build from real ThaiReader v42 and Phupha datasets
+        run: python3 scripts/build_learning_order.py
+      - name: Commit overlay only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/study-overlay-v3.json
+          git diff --cached --quiet || (git commit -m 'Update ThaiWord v3 verified study overlay' && git push)
